@@ -4,40 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reja</title>
+    <link rel="stylesheet" href="/public/reja.css">
 </head>
-<body style="background-color: aqua;">
+<body>
     <div class="container">
-        <h1 class="display-4 text-center py-1" >Reja va Maqsadlar</h1>
+        <h1>Reja va Maqsadlar</h1>
         <div class="jumbotron p-3 shadow-sm">
             <form id="create-form" action="/create-item" method="POST">
                 <div class="d-flex align-items-center">
-                    <input id="create-field" name="reja" autofocus autocomplete="off" class="form-controll mr-3" style="flex: 1" type="text"/>
-                    <button class="btn btn-primary" style="border-radius: 20px">
-                        Reja
-                    </button>
+                    <input name="reja" autofocus autocomplete="off" class="form-controll"  type="text"/>
+                    <button class="btn-primary">Reja</button>
                 </div>
             </form>
         </div>
         <br>
         <!-- <%= items[2].reja %>  -->
-<ul id="item-list" class="list-group pb-5">
+<ul class="list-group">
   <% items.map(function (item) { %>
-    <li class="list-group-item list-group-item-info d-flex align-items-center justify-content-between">
+    <li class="list-group-item">
       <span class="item-text"><%= item.reja %></span>
-      <div>
-        <button
-          data-id="<%= item._id %>"
-          class="edit-me btn btn-secondary btn-sm mr-1"
-        >
-          Ozgartirish
+      <!-- <div> -->
+        <button data-id="<%= item._id %>"class="edit-me">Ozgartirish
         </button>
         <button
-          data-id="<%= item._id %>"
-          class="delete-me btn btn-danger btn-sm"
-        >
-          Ochirish
+          data-id="<%= item._id %>"class="delete-me"> Ochirish 
         </button>
-      </div>
+      <!-- </div> -->
     </li>
   <% }) %>
 </ul>
