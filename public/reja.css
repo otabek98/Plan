@@ -1,0 +1,51 @@
+.body{
+    background-color: aqua;
+    margin: 0;
+    font-family: system-ui, -apple-system, Arial, sans-serif;
+}
+.container{
+  max-width: 800px;   /* umumiy eni */
+  width: 100%;
+  margin: 24px auto;  /* markazga */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ichidagi elementlarni gorizontal markazga */
+  gap: 16px;
+}
+
+
+.form-controll{
+    display: flex;
+    flex: 1; 
+}
+
+.btn-primary{
+    border-radius: 20px;
+}
+
+.list-group{
+  width: 100%;
+  max-width: 800px;   /* ro‘yxat eni konteynerga mos */
+  margin: 0 auto;     /* markaz */
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* elementlar ustma-ust */
+  gap: 8px;
+}
+
+.list-group-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* matn chapda, tugmalar o‘ngda */
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+}
+.edit-me{
+
+}
+.delete-me{
+
+}
